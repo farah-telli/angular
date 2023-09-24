@@ -1,0 +1,12 @@
+<p>fournisseur-component works!</p>
+<!-- fournisseur.component.html -->
+
+<div [hidden]="hide">
+    <h2>Informations du Fournisseur</h2>
+    <p><strong>ID du Fournisseur:</strong> {{ idFournisseur }}</p>
+    <p><strong>Code du Fournisseur:</strong> {{ code }}</p>
+    <p><strong>Libellé du Fournisseur:</strong> {{ libelle }}</p>
+  
+  <button (click)="toggleHide()">Cacher</button>
+ 
+</div>

@@ -1,0 +1,12 @@
+<dl *ngFor="let f of list">
+    <!--<div  *ngIf="f.idFournisseur <= 100 ">-->    <!-- prob avec la cdt ! -->
+        <fieldset [style.background-color]=" f.libelle == 'hp' ? 'green' : 'yellow'" (click)="deleteFrnsr(f)"> <!--je sais pas pourquoi (dbclick) ne fonctionne pas !! -->
+            <div [style]="{'font-weight': getColor(f)}">
+                <dd>IdFournisseur: {{f.idFournisseur}}</dd>
+                <dd>Code : {{f.code}}</dd>
+                <dd>Libelle : {{f.libelle}}</dd>
+            </div>
+        </fieldset>
+    <!--</div>-->
+    
+</dl>
